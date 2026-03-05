@@ -2,7 +2,7 @@ import express from "express";
 
 const router = express.Router();
 
-// FRONTEND HENTER INFO FRA SERVER
+// FRONTEND HENTER INFO FRA SERVER, REQ=REQUEST,RES=RESPONSE
 router.get("/", (req, res) => {
   res.json({ httpMethod: "get" });
 });

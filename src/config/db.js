@@ -1,11 +1,14 @@
 import { PrismaClient } from "@prisma/client/extension";
 // autocomplite because of prisma
+console.log(PrismaClient);
+
 const prisma = new PrismaClient({
   log:
     process.env.NODE_ENV === "development"
       ? ["query", "error", "warn"]
       : ["error"],
 });
+console.log(prisma);
 
 const connectDB = async () => {
   try {

@@ -8,6 +8,8 @@ import movieRoutes from "./routes/movieRoutes.js";
 config();
 connectDB();
 
+const express = require("express");
+
 const app = express();
 
 // API Routes
